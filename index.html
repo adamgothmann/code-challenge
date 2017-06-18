@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Saint Mary's Press Code Challenge</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="angular.min.js" charset="utf-8"></script>
+    <script src="script.js" charset="utf-8"></script>
+  </head>
+  <body ng-controller="mainController">
+    <div class="container">
+      <header>
+        <nav class="navbar navbar-default">
+            <ul class="nav">
+              <li>HOME</li>
+              <li>WORK</li>
+              <li>ABOUT</li>
+              <li>CONTACT</li>
+            </ul>
+            <ul class="nav navbar-right">
+              <li><img src="images/navbar_images/youtube.png" alt=""></li>
+              <li><img src="images/navbar_images/twitter.png" alt=""></li>
+              <li><img src="images/navbar_images/facebook.png" alt=""></li>
+            </ul>
+        </nav>
+        <div class="title">
+          <h2>MyDesign Portfolio</h2>
+          <h6>DESIGN SOLUTIONS FOR YOUR BUSINESS</h6>
+        </div>
+      </header>
+
+      <section class="feature">
+
+      </section>
+
+      <div class="">
+        <h2>Design Services</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dignissim tempus nisl pulvinar feugiat. Praesent pharetra ac justo at cursus.
+           Aliquam vitae est eros. Mauris mattis faucibus nisi, eu hendrerit leo ultrices vitae. Duis sit amet elementum lectus. Vestibulum ante ipsum
+           primis in faucibus orci luctus et ultrices posuere cubilia Curae; Praesent eros arcu, tincidunt non scelerisque vel, sodales quis erat. Mauris
+           nec ligula eu libero faucibus scelerisque in in neque. Suspendisse ultricies lacus felis, vitae commodo elit suscipit et.</p>
+      </div>
+
+      <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="row">
+          <div class="col portfolio">
+            <img id="laptops" src="images/portfolio_images/laptops.jpg" alt="">
+          </div>
+          <div class="col portfolio">
+            <img id="acmelogo" src="images/portfolio_images/acmelogo.gif" alt="">
+          </div>
+          <div class="col portfolio">
+            <img id="tablet" src="images/portfolio_images/tablet.jpg" alt="">
+          </div>
+          <div class="col portfolio">
+            <img id="alogo" src="images/portfolio_images/alogo.gif" alt="">
+          <div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="form">
+          <h2>Register for Updates</h2>
+          <form name="updates">
+            <div>
+              <input ng-model="name" ng-change="checkLength()" type="text" placeholder="Name" name="" value="" required>
+            </div>
+            <div>
+              <input ng-model="email" ng-change="checkLength()" type="text" placeholder="Email@Address.com" name="" value="" required>
+            </div>
+            <button ng-click="subscribe()"  type="submit" name="submit">Subscribe</button>
+            <p ng-show="valid">form has been submitted successfully.</p>
+          </form>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

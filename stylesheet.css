@@ -1,0 +1,56 @@
+nav {
+  background-color: grey;
+}
+
+ul {
+  display: inline;
+}
+
+.title {
+  height: 100px;
+}
+
+.feature {
+  background: url("images/main_feature_images/feature-bg.jpg");
+  height: 300px;
+}
+
+.form {
+  float: right;
+  margin-right: 40px;
+}
+
+.portfolio {
+  display: inline;
+  height: 200px;
+  width: 200px;
+  margin: 20px;
+}
+
+.title {
+  text-align: center;
+}
+
+#laptops {
+  height: 150px;
+  width: 150px;
+}
+
+#acmelogo {
+  height: 150px;
+  width: 150px;
+}
+
+#tablet {
+  height: 150px;
+  width: 150px;
+}
+
+#alogo {
+  height: 150px;
+  width: 150px;
+}
+
+#portfolio {
+  background-color: grey;
+}
