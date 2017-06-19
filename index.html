@@ -12,13 +12,13 @@
     <div class="">
       <header>
         <nav class="navbar navbar-default">
-            <ul class="nav one">
-              <li>HOME</li>
-              <li>WORK</li>
-              <li>ABOUT</li>
-              <li>CONTACT</li>
+            <ul class="nav site-nav">
+              <li><b>HOME</b></li>
+              <li><b>WORK</b></li>
+              <li><b>ABOUT</b></li>
+              <li><b>CONTACT</b></li>
             </ul>
-            <ul class="nav two">
+            <ul class="nav media-nav">
               <li><img src="images/navbar_images/youtube.png" alt=""></li>
               <li><img src="images/navbar_images/twitter.png" alt=""></li>
               <li><img src="images/navbar_images/facebook.png" alt=""></li>
@@ -31,16 +31,19 @@
       </header>
 
       <section class="feature">
-        <img src="images/main_feature_images/feature-bg.jpg" alt="">
+        <!-- <img src="images/main_feature_images/feature-bg.jpg" alt=""> -->
         <div class="row">
-          <div class="test col">
-            <p>ok test something else</p>
+          <div class="block col">
+            <img src="images/main_feature_images/web.png" alt="">
+            <h5>WEB DESIGN</h5>
           </div>
-          <div class="test col">
-
+          <div class="block col">
+            <img src="images/main_feature_images/graphic.png" alt="">
+            <h5>GRAPHIC DESIGN</h5>
           </div>
-          <div class="test col">
-
+          <div class="block col">
+            <img src="images/main_feature_images/video.png" alt="">
+            <h5>VIDEO PRODUCTION</h5>
           </div>
         </div>
       </section>
@@ -58,15 +61,23 @@
         <div class="row pictures">
           <div class="col portfolio">
             <img class="picture" src="images/portfolio_images/laptops.jpg" alt="">
+            <span>Lorem ipsum<br/> dolor sit amet</span>
+            <img src="images/main_feature_images/web-small.png" class="portfolio-image" alt="">
           </div>
           <div class="col portfolio">
             <img class="picture" src="images/portfolio_images/acmelogo.gif" alt="">
+            <span>Lorem ipsum<br/> dolor sit amet</span>
+            <img src="images/main_feature_images/graphic-small.png" class="portfolio-image" alt="">
           </div>
           <div class="col portfolio">
             <img class="picture" src="images/portfolio_images/tablet.jpg" alt="">
+            <span>Lorem ipsum<br/> dolor sit amet</span>
+            <img src="images/main_feature_images/video-small.png" class="portfolio-image" alt="">
           </div>
           <div class="col portfolio">
             <img class="picture" src="images/portfolio_images/alogo.gif" alt="">
+            <span>Lorem ipsum<br/> dolor sit amet</span>
+            <img src="images/main_feature_images/graphic-small.png" class="portfolio-image" alt="">
           <div>
         </div>
       </section>
@@ -74,7 +85,7 @@
       <footer>
         <div class="row footer">
           <div class="info col" id="blog">
-            <h5>From the Blog</h4>
+            <h5>From the Blog</h5>
             <p><b>Lorem ipsum dolor sit</b> <br/>
             <i>on March 10, 2014</i></p>
             <p><b>Consectetur Adipisicing Elit</b> <br/>
@@ -84,7 +95,7 @@
           </div>
 
           <div class="info col" id="contact">
-            <h5>Contact Us</h4>
+            <h5>Contact Us</h5>
             <p>123 45th Street <br/>
             Podunk, TX 77777</p>
             <p>(555)555-5555</p>
@@ -92,15 +103,15 @@
           </div>
 
           <div class="info col" id="form">
-            <h5>Register for Updates</h4>
-            <form name="updates">
+            <h5>Register for Updates</h5>
+            <form name="updates" ng-submit="subscribe()">
               <div>
-                <input ng-model="name" ng-change="checkLength()" type="text" placeholder="Name" name="" value="" required>
+                <input ng-model="name" type="text" placeholder="Name" name="" value="" required>
               </div>
               <div>
-                <input ng-model="email" ng-change="checkLength()" type="text" placeholder="Email@Address.com" name="" value="" required>
+                <input ng-model="email" type="text" placeholder="Email@Address.com" name="" value="" required>
               </div>
-              <button ng-click="subscribe()"  type="submit" name="submit">SUBSCRIBE</button>
+              <input id="button" type="submit" name="submit" value="Submit">
               <p ng-show="valid">form has been submitted successfully.</p>
             </form>
           </div>
