@@ -1,9 +1,54 @@
+footer {
+  background-color: #262626;
+}
+
+footer p {
+  color: #d9d9d9;
+  font-size: 9px;
+}
+
+h2, h5, h6, button {
+  color: #ff6666;
+}
+
+h2 {
+  padding-top: 10px;
+}
+
+input {
+  margin-bottom: 12px;
+}
+
+input, button {
+  width: 265px;
+}
+
 nav {
-  background-color: grey;
+  background-color: #d9d9d9;
+}
+
+ul, .design, #portfolio h2, #blog {
+  margin-left: 40px;
+}
+
+.design p {
+  margin-right: 40px;
 }
 
 ul {
   display: inline;
+  margin: 20px;
+}
+
+.copyright {
+  background-color: #1a1a1a;
+  height: 100%;
+}
+
+.copyright p {
+  text-align: center;
+  padding-top: 10px;
+  color: #bfbfbf;
 }
 
 .title {
@@ -11,46 +56,49 @@ ul {
 }
 
 .feature {
-  background: url("images/main_feature_images/feature-bg.jpg");
+  background-color: #262626;
   height: 300px;
 }
 
-.form {
-  float: right;
-  margin-right: 40px;
+.feature img {
+  position: relative;
+  clip-path: inset(0px 15px 0px 40px);
+}
+
+.info {
+  display: inline;
+  margin-top: 20px;
 }
 
 .portfolio {
   display: inline;
   height: 200px;
   width: 200px;
-  margin: 20px;
+  /*margin: 20px;*/
+}
+
+.pictures {
+  margin-left: 27px;
+  margin-right: 34px;
+  padding-bottom: 50px;
 }
 
 .title {
   text-align: center;
 }
 
-#laptops {
-  height: 150px;
-  width: 150px;
-}
-
-#acmelogo {
-  height: 150px;
-  width: 150px;
-}
-
-#tablet {
-  height: 150px;
-  width: 150px;
-}
-
-#alogo {
-  height: 150px;
-  width: 150px;
+.picture {
+  height: 220px;
+  width: 220px;
 }
 
 #portfolio {
-  background-color: grey;
+  background-color: #d9d9d9;
+}
+
+.test {
+  position: absolute;
+  border: solid, white;
+  height: 200px;
+  width: 200px;
 }

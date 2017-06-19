@@ -9,70 +9,105 @@
     <script src="script.js" charset="utf-8"></script>
   </head>
   <body ng-controller="mainController">
-    <div class="container">
+    <div class="">
       <header>
         <nav class="navbar navbar-default">
-            <ul class="nav">
+            <ul class="nav one">
               <li>HOME</li>
               <li>WORK</li>
               <li>ABOUT</li>
               <li>CONTACT</li>
             </ul>
-            <ul class="nav navbar-right">
+            <ul class="nav two">
               <li><img src="images/navbar_images/youtube.png" alt=""></li>
               <li><img src="images/navbar_images/twitter.png" alt=""></li>
               <li><img src="images/navbar_images/facebook.png" alt=""></li>
             </ul>
         </nav>
         <div class="title">
-          <h2>MyDesign Portfolio</h2>
+          <h1>My Design Portfolio</h1>
           <h6>DESIGN SOLUTIONS FOR YOUR BUSINESS</h6>
         </div>
       </header>
 
       <section class="feature">
+        <img src="images/main_feature_images/feature-bg.jpg" alt="">
+        <div class="row">
+          <div class="test col">
+            <p>ok test something else</p>
+          </div>
+          <div class="test col">
 
+          </div>
+          <div class="test col">
+
+          </div>
+        </div>
       </section>
 
-      <div class="">
+      <div class="design">
         <h2>Design Services</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dignissim tempus nisl pulvinar feugiat. Praesent pharetra ac justo at cursus.
-           Aliquam vitae est eros. Mauris mattis faucibus nisi, eu hendrerit leo ultrices vitae. Duis sit amet elementum lectus. Vestibulum ante ipsum
-           primis in faucibus orci luctus et ultrices posuere cubilia Curae; Praesent eros arcu, tincidunt non scelerisque vel, sodales quis erat. Mauris
-           nec ligula eu libero faucibus scelerisque in in neque. Suspendisse ultricies lacus felis, vitae commodo elit suscipit et.</p>
+        Aliquam vitae est eros. Mauris mattis faucibus nisi, eu hendrerit leo ultrices vitae. Duis sit amet elementum lectus. Vestibulum ante ipsum
+        primis in faucibus orci luctus et ultrices posuere cubilia Curae; Praesent eros arcu, tincidunt non scelerisque vel, sodales quis erat. Mauris
+        nec ligula eu libero faucibus scelerisque in in neque. Suspendisse ultricies</p>
       </div>
 
       <section id="portfolio">
         <h2>Portfolio</h2>
-        <div class="row">
+        <div class="row pictures">
           <div class="col portfolio">
-            <img id="laptops" src="images/portfolio_images/laptops.jpg" alt="">
+            <img class="picture" src="images/portfolio_images/laptops.jpg" alt="">
           </div>
           <div class="col portfolio">
-            <img id="acmelogo" src="images/portfolio_images/acmelogo.gif" alt="">
+            <img class="picture" src="images/portfolio_images/acmelogo.gif" alt="">
           </div>
           <div class="col portfolio">
-            <img id="tablet" src="images/portfolio_images/tablet.jpg" alt="">
+            <img class="picture" src="images/portfolio_images/tablet.jpg" alt="">
           </div>
           <div class="col portfolio">
-            <img id="alogo" src="images/portfolio_images/alogo.gif" alt="">
+            <img class="picture" src="images/portfolio_images/alogo.gif" alt="">
           <div>
         </div>
       </section>
 
       <footer>
-        <div class="form">
-          <h2>Register for Updates</h2>
-          <form name="updates">
-            <div>
-              <input ng-model="name" ng-change="checkLength()" type="text" placeholder="Name" name="" value="" required>
-            </div>
-            <div>
-              <input ng-model="email" ng-change="checkLength()" type="text" placeholder="Email@Address.com" name="" value="" required>
-            </div>
-            <button ng-click="subscribe()"  type="submit" name="submit">Subscribe</button>
-            <p ng-show="valid">form has been submitted successfully.</p>
-          </form>
+        <div class="row footer">
+          <div class="info col" id="blog">
+            <h5>From the Blog</h4>
+            <p><b>Lorem ipsum dolor sit</b> <br/>
+            <i>on March 10, 2014</i></p>
+            <p><b>Consectetur Adipisicing Elit</b> <br/>
+            <i>on March 10, 2014</i></p>
+            <p><b>Lorem ipsum dolor sit</b> <br/>
+            <i>on March 10, 2014</i></p>
+          </div>
+
+          <div class="info col" id="contact">
+            <h5>Contact Us</h4>
+            <p>123 45th Street <br/>
+            Podunk, TX 77777</p>
+            <p>(555)555-5555</p>
+            <p><i>info@email.com</i></p>
+          </div>
+
+          <div class="info col" id="form">
+            <h5>Register for Updates</h4>
+            <form name="updates">
+              <div>
+                <input ng-model="name" ng-change="checkLength()" type="text" placeholder="Name" name="" value="" required>
+              </div>
+              <div>
+                <input ng-model="email" ng-change="checkLength()" type="text" placeholder="Email@Address.com" name="" value="" required>
+              </div>
+              <button ng-click="subscribe()"  type="submit" name="submit">SUBSCRIBE</button>
+              <p ng-show="valid">form has been submitted successfully.</p>
+            </form>
+          </div>
+        </div>
+
+        <div class="copyright">
+          <p>&copy;copyright 2014, My Portfolio Designs</p>
         </div>
       </footer>
     </div>
